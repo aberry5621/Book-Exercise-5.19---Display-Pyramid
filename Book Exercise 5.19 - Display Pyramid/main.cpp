@@ -6,10 +6,34 @@
 //  Copyright © 2016 COMP130. All rights reserved.
 //
 
-#include <iostream>
+#include<iostream>
+#include<iomanip>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    
+    int input_number = 0;
+    
+    cout << "input a number: ";
+    cin >> input_number;
+    
+    cout << "input_number is: " << input_number << endl;
+    
+    for (int i = 1; i <= input_number; i++)
+    {
+        // sets each row number
+        cout << setw(4) << "row: " << i;
+        
+        for (int j = input_number; j > 0; j--)
+        {
+            if (j <= i) {
+                cout << setw(4) << j;
+            } else {
+                cout << setw(4) << "*";
+            }
+        }
+        cout << endl;
+    }
+    
     return 0;
 }
