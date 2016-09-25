@@ -22,13 +22,18 @@ int main() {
     for (int i = 1; i <= input_number; i++)
     {
         // sets each row number
-        cout << setw(4) << "row: " << i;
+        //cout << setw(4) << "row: " << i;
         
         for (int j = input_number; j > 0; j--)
         {
             
             if (j <= i) {
-                cout << setw(4) << j;
+                if (j > 9) {
+                    cout << setw(4) << j;
+                } else {
+                    cout << setw(4) << j;
+                }
+                
             } else {
                 cout << setw(4) << " ";
             }
@@ -39,7 +44,11 @@ int main() {
             for (int j = 2; j <= input_number; j++)
             {
                 if (j <= i) {
-                    cout << setw(4) << j;
+                    if (j > 9) {
+                        cout << setw(5) << j;
+                    } else {
+                        cout << setw(4) << j;
+                    }
                 }
                 
             }
