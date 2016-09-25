@@ -28,12 +28,7 @@ int main() {
         {
             
             if (j <= i) {
-                if (j > 9) {
-                    cout << setw(4) << j;
-                } else {
-                    cout << setw(4) << j;
-                }
-                
+                cout << setw(4) << j;
             } else {
                 cout << setw(4) << " ";
             }
@@ -45,7 +40,7 @@ int main() {
             {
                 if (j <= i) {
                     if (j > 9) {
-                        cout << setw(5) << j;
+                        cout << setw(4) << j;
                     } else {
                         cout << setw(4) << j;
                     }
