@@ -26,12 +26,25 @@ int main() {
         
         for (int j = input_number; j > 0; j--)
         {
+            
             if (j <= i) {
                 cout << setw(4) << j;
             } else {
-                cout << setw(4) << "*";
+                cout << setw(4) << " ";
+            }
+            
+        }
+        
+        if (i > 1) {
+            for (int j = 2; j <= input_number; j++)
+            {
+                if (j <= i) {
+                    cout << setw(4) << j;
+                }
+                
             }
         }
+        
         cout << endl;
     }
     
